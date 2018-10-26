@@ -8,7 +8,7 @@ testdb.sqlite
 test/example/media/pybb_upload
 docs/_build/
 env/
-
+.DS_Store
 #After a tox test run, some folders are created. Ignore these
 .tox/
 .coverage
