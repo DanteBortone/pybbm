@@ -70,7 +70,7 @@ class Forum(models.Model):
     readed_by = models.ManyToManyField(get_user_model_path(), through='ForumReadTracker', related_name='readed_forums')
     headline = models.TextField(_('Headline'), blank=True, null=True)
     subscribers = models.ManyToManyField(get_user_model_path(), related_name='forum_subscriptions',
-                                         verbose_name=_('Subscribers'), blank=True)
+                                         verbose_name=_('ForumSubscribers'), blank=True)
     slug = models.SlugField(verbose_name=_("Slug"), max_length=255)
 
     class Meta(object):
